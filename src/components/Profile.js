@@ -1,15 +1,6 @@
 import PropTypes from "prop-types";
 
-const Profile = ({
-  username,
-  tag,
-  location,
-  avatar,
-  stats,
-  followers,
-  views,
-  likes,
-}) => {
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
       <div className="description">
