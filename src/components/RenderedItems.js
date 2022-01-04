@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 
 import Profile from "./Profile";
 import user from "../user.json";
+import Statistics from "./Statistics";
+import data from "../data.json";
 
 function RenderedItems() {
   return (
@@ -13,6 +15,7 @@ function RenderedItems() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data}/>
     </div>
   );
 }
