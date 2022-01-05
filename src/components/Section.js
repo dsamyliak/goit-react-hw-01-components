@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import { H1Styled } from "./Section.styled";
 
 function Section({ title, children }) {
   return (
     <div className="allTasks">
-      {title && <h1 className="title">{title}</h1>}
+      {title && <H1Styled className="title">{title}</H1Styled>}
       {children}
     </div>
   );

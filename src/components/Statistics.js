@@ -1,18 +1,29 @@
 import PropTypes from "prop-types";
+import {
+  SectionStyled,
+  H2Styled,
+  UlStyled,
+  LiStyled,
+  LiHeaderStyled,
+  LiNumbersStyled,
+} from "./Statistics.styled";
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
+    <SectionStyled className="statistics">
+      {title && <H2Styled className="title">{title}</H2Styled>}
+      <UlStyled className="stat-list">
         {stats.map((stat) => (
-          <li key={stat.id} className="item">
-            <span className="label">{stat.label}</span>
-            <span className="percentage"> {stat.percentage}</span>
-          </li>
+          <LiStyled key={stat.id} className="item">
+            <LiHeaderStyled className="label">{stat.label}</LiHeaderStyled>
+            <LiNumbersStyled className="percentage">
+              {" "}
+              {stat.percentage}%
+            </LiNumbersStyled>
+          </LiStyled>
         ))}
-      </ul>
-    </section>
+      </UlStyled>
+    </SectionStyled>
   );
 };
 
