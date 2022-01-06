@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const UlFriendStyled = styled.ul`
   display: block;
-  width: 450px;
+  max-width: 450px;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
