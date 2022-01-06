@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const UlFriendStyled = styled.ul`
   display: block;
-  max-width: 450px;
-  text-align: center;
-  margin: 0 auto;
+  margin: 0px auto;
   margin-top: 30px;
+  max-width: 500px;
+  text-align: center;
   padding: 20px;
   background-color: #234;
   border: solid 3px silver;
